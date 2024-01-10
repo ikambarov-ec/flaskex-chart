@@ -18,9 +18,9 @@ jobs:
       - name: Setup KUBECONFIG
         uses: vbem/kubeconfig4sa@v1
         with:
-          server:     ${{ secrets.KUBEAPI_SERVER }}
-          ca-base64:  ${{ secrets.K8S_CA_BASE64 }}
-          token:      ${{ secrets.K8S_SA_TOKEN }}
+          server:     ${{ secrets.Dev_KUBEAPI_SERVER }}
+          ca-base64:  ${{ secrets.Dev_K8S_CA_BASE64 }}
+          token:      ${{ secrets.Dev_K8S_SA_TOKEN }}
           namespace:  default
 
       - name: Helm Install 
